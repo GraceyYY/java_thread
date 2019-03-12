@@ -1,4 +1,4 @@
-package DeadLock;
+package dead_lock;
 
 public class DeadLockThread implements Runnable {
     private String firstChopsticks;
@@ -21,9 +21,9 @@ public class DeadLockThread implements Runnable {
                 System.out.println(name + " 已经使用 " + secondChopsticks);
                 work();
             }
-            System.out.println(name + " 准备使用 " + secondChopsticks);
+            System.out.println(name + " 使用完毕 " + secondChopsticks);
         }
-        System.out.println(name + " 已经使用 " + firstChopsticks);
+        System.out.println(name + " 使用完毕 " + firstChopsticks);
         System.out.println(name + " 完成就餐");
     }
 

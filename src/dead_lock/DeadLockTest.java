@@ -1,4 +1,4 @@
-package DeadLock;
+package dead_lock;
 
 
 class DeadLockTest {
