@@ -11,12 +11,5 @@ public class Main {
         web.start();
         app.start();
 
-        try {
-            station.join();
-            web.join();
-            app.join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
 }
